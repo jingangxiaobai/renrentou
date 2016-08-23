@@ -1,0 +1,769 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link href="css/base.css" rel="stylesheet">
+    <script src="js/hxsd_tools.js"></script>
+    <script src="js/jd_tools.js"></script>
+    <script src="js/return_tools.js"></script>
+    <script src="js/widget.js"></script>
+    <script>
+        window.onload=function(){
+            hxsd_tab("tab","edit_content");
+            jd.slide("slideA",true);
+            switch_person();
+        }
+    </script>
+</head>
+<body>
+    <!--头部-->
+    <div class="top">
+        <div class="inner">
+            <div class="top_logo fl">
+                <img class="fl" src="images/logo.png" />
+                <h1 class="fl"><a href="index.html">人人投</a><span></span></h1>
+                <div class="top_logo_right fl">
+                    <h2 class="fl">投资您身边的店铺</h2>
+                    <p>www.renrentou.com</p>
+                </div>
+            </div>
+            <ul class="top_nav fl">
+                <li><a href="list.html">融资店铺</a></li>
+                <li><a href="list_person.html">店铺投资人</a></li>
+                <li><a class="top_spc_word" href="#">新手指引</a></li>
+            </ul>
+            <div class="top_logon fl">
+                <h3 class="fl" id="center_members">
+                    <a  class="top_logon_success" href="#">会员中心</a>
+                    <ul id="top_members">
+                        <li><a href="myHomPage.html">个人主页</a></li>
+                        <li><a href="#">提交融资店铺</a></li>
+                        <li><a href="activity.html">已提交融资店铺</a></li>
+                        <li><a href="approve.html">投资人认证</a></li>
+                        <li><a href="person_setting.html">账号设置</a></li>
+                        <li><a href="index.html">安全退出</a></li>
+                    </ul>
+                </h3>
+                <p class="fl"><a href="login_login.html">消息（199）</a></p>
+            </div>
+        </div>
+    </div>
+    <!--内容部分-->
+    <div class="hxl">
+        <div class="inner">
+            <!--牛扒工厂-->
+            <div class="edit_main_middle">
+                <div class="edit_main_middle_t">
+                    <img  class="fl" src="images/app_logo.png">
+                    <p class="fl niupa">牛扒工厂</p>
+                    <p class="fl xm">项目最新公告:已经获得五人预购</p>
+                </div>
+                <div class="clear"></div>
+                <div class="edit_main_middle_m">
+                    <div class="edit_main_middle_mpic fl">
+                        <img src="images/editbg_03.jpg">
+                    </div>
+                    <div class="fl edit_main_middle_mcon">
+                        <div class="edit_main_middle_mcont">
+                            <p class="fl">正宗西北农家自制枕芯</p>
+                        </div>
+                        <div class="clear"></div>
+                        <ul class="fl">
+                            <li>行业 : 餐饮　｜　目前开店数量<span>2</span>家</li>
+                            <li>总位置:北京市丰台区佳园路大台子9号<img src="images/editsectubiao_17.jpg"> 总店全景</li>
+                        </ul>
+                        <div class="fl picgroup"><img src="images/editsectubiao_07.jpg">　　<img src="images/editsectubiao_09.jpg">　　<img src="images/editsectubiao_11.jpg"></div>
+                        </ul>
+                    </div>
+                </div>
+                <div class="edit_main_middle_b">
+                    <div class="edit_main_middle_bcon fl">
+                        <ul class="edit_main_middle_bu1" >
+                            <li><p class="fl">信息完整度 : </p></li>
+                            <li class="release_main_tpic1 "><img  src="images/release_scroll.png"></li>
+                            <li><p class="fl bf">25%</p></li>
+                        </ul>
+                        <div class="clear"></div>
+                        <ul class="edit_main_middle_bu2">
+                            <li><p>￥100,1000</p><span>项目方出资</span></li>
+                            <li><p>￥100,1000</p><span>项目方出资</span></li>
+                            <li><p>￥100,1000</p><span>项目方出资</span></li>
+                        </ul>
+                    </div>
+                    <div class="edit_main_middle_bcon fl">
+                        <p class="sydate">剩余<b>15</b>天</p>
+                    </div>
+                    <div class="edit_main_middle_bconl fl">
+                        <p class="symon fl">已认购:￥40,000</p>
+                        <a class="sya fl" href="#" >认购</a>
+                    </div>
+                </div>
+            </div>
+            <div class="clear"></div>
+            <!--选项卡-->
+            <div class="edit_main_bottom" id="tab">
+                <ul class="edit_main_bottom_u">
+                    <li  class="ac">现有店介绍</li>
+                    <li>融资分店</li>
+                    <li>融资动态</li>
+                    <li>粉丝(228)</li>
+                    <li>已有店铺</li>
+                    <li class="edit_main_bottom_ulast"><img src="images/editsecondpic_07.jpg">　 www.sina.com</li>
+                </ul>
+                <div class="clear"></div>
+                <!--选项卡切换-->
+                <!--现有店介绍-->
+                <div class="ident_pz edit_content active">
+                    <div class="ident_pl fl">
+                        <div class="ident_pl_one">
+                            <h3>视频</h3>
+                            <img class="edit_plo" src="images/edit_onebg_03.jpg">
+                            <div class="np_Introduction">
+                                <div class="np_intr">
+                                    <h3>简介</h3>
+                                    <img class="np_img" src="images/intr3.png"/>
+                                </div>
+                                <p>牛扒工厂，由美籍华裔青年实业家叶子诒于2006年4月在百子湾路后现代城，
+                                    以五十万元资金和十五名员工开始的西餐店。</p>
+                                <p><br/> </p>
+                                <p>　　牛扒工厂，由美籍华裔青年实业家叶子诒于2006年4月在百子湾路后现代城，
+                                    以五十万元资金和十五名员工开始的西餐店。牛扒工厂，
+                                    由美籍华裔青年实业家叶子诒于2006年4月在百子湾路后现代城，
+                                    以五十万元资金和十五名员工开始的西餐店。牛扒工厂，
+                                    由美籍华裔青年实业家叶子诒于2006年4月在百子湾路后现代城，
+                                    以五十万元资金和十五名员工开始的西餐店。</p>
+                                <p><br/> </p>
+                                <p>　　牛扒工厂，由美籍华裔青年实业家叶子诒于2006年4月在百子湾路后现代城，
+                                    以五十万元资金和十五名员工开始的西餐店。牛扒工厂，
+                                    由美籍华裔青年实业家叶子诒于2006年4月在百子湾路后现代城，
+                                    以五十万元资金和十五名员工开始的西餐店。牛扒工厂，
+                                    由美籍华裔青年实业家叶子诒于2006年4月在百子湾路后现代城，
+                                    以五十万元资金和十五名员工开始的西餐店。牛扒工厂，
+                                    由美籍华裔青年实业家叶子诒于2006年4月在百子湾路后现代城，
+                                    以五十万元资金和十五名员工开始的西餐店。牛扒工厂，
+                                    由美籍华裔青年实业家叶子诒于2006年4月在百子湾路后现代城，
+                                    以五十万元资金和十五名员工开始的西餐店。牛扒工厂，
+                                    由美籍华裔青年实业家叶子诒于2006年4月在百子湾路后现代城，
+                                    以五十万元资金和十五名员工开始的西餐店。</p>
+                            </div>
+                        </div>
+                        <div class="ident_pl_two">
+                            <div class="np_vadio clearfix" >
+                                <p>运营情况</p>
+                                <span class="fl">平均单店面积： <i>100平~150平</i></span>
+                                <span class="np_img_spc fl">　人均消费：　　<i> 100元</i></span>
+                                <span class="np_spc_li">　 客流量/日：<i> 2000人~3000人</i></span>
+                            </div>
+                            <h3>店铺图片</h3>
+                            <!--图片轮播部分-->
+                            <div class=" main1-banner" id="slideA">
+                                <a href="javascript:;" class="moveBtn prev">&laquo;</a>
+                                <a href="javascript:;" class="moveBtn next">&raquo;</a>
+                                <ol></ol>
+                                <ul>
+                                    <li><a href="javascript:;"><img src="images/edit_onebg_11.jpg" alt="广告一" /></a></li>
+                                    <li><a href="javascript:;"><img src="images/edit_onebg_11.jpg" alt="广告二" /></a></li>
+                                    <li><a href="javascript:;"><img src="images/edit_onebg_11.jpg" alt="广告三" /></a></li>
+                                    <li><a href="javascript:;"><img src="images/edit_onebg_11.jpg" alt="广告四" /></a></li>
+                                    <li><a href="javascript:;"><img src="images/edit_onebg_11.jpg" alt="广告五" /></a></li>
+                                    <li><a href="javascript:;"><img src="images/edit_onebg_11.jpg" alt="广告六" /></a></li>
+                                </ul>
+                                <div class="clearfix"></div>
+                            </div>
+                            <div class="np_main_team">
+                                <h3>创建团队</h3>
+                                <img class="team_img_float" src="images/inre6.png"/>
+                                <ul class="clearfix">
+                                    <li>
+                                        <img class="fl" src="images/person.png"/>
+                                        <h5 class="fl">叶子诒</h5>
+                                        <p>创始人</p>
+                                    </li>
+                                    <li>
+                                        <img class="fl" src="images/person.png"/>
+                                        <h5 class="fl">叶子诒</h5>
+                                        <p>创始人</p>
+                                    </li>
+                                    <li>
+                                        <img class="fl" src="images/person.png"/>
+                                        <h5 class="fl">叶子诒</h5>
+                                        <p>创始人</p>
+                                    </li>
+                                    <li>
+                                        <img class="fl" src="images/person.png"/>
+                                        <h5 class="fl">叶子诒</h5>
+                                        <p>创始人</p>
+                                    </li>
+                                </ul>
+                                <p>“牛扒工厂”的创始人，美籍华裔青年实业家叶子诒(Michael.YIP)。
+                                    自幼跟随家人从香港移民美国，于北卡罗来纳州大学完成学
+                                    “牛扒工厂”的创始人，美籍华裔青年实业家叶子诒(Michael.YIP)。
+                                    自幼跟随家人从香港移民美国，于北卡罗来纳州大学完成学
+                                    “牛扒工厂”的创始人，美籍华裔青年实业家叶子诒(Michael.YIP)。
+                                </p>
+                            </div>
+                            <div class="np_main_creat">
+                                <h6>创建人寄语</h6>
+                                <p>2006年初，在一个巧合的机缘之下，叶子诒以50万元RMB的最基本投资,
+                                    在百子湾路后现代城内开设了第一家牛扒工厂...</p>
+                            </div>
+                            <div class="np_main_creat">
+                                <h6>团队简介</h6>
+                                <p> 2008-2010 三年蝉联， 荣获 “That’s Beijing”杂志：
+                                    “年度北京最佳情侣约会餐厅”及“年度北京“全年最佳西餐厅的称号
+                                    “年度北京最佳情侣约会餐厅”及“年度北京“全年最佳西餐厅的称号</p>
+                            </div>
+                            </div>
+                        <div class="ident_pl_three">
+                            <img src="images/edit_onebg_17.jpg">
+                            <p>经过八年的努力经营，已在长安街、国贸有两家商铺。经过八年的努力经营，已在长安街、国贸有两家商铺。
+                                经过八年的努力经营，已在长安街、国贸有两家商铺。经过八年的努力经营，已在长安街、国贸有两家商铺。
+                                经过八年的努力经营，已在长安街、国贸有两家商铺。经过八年的努力经营，已在长安街、国贸有两家商铺。
+                                经过八年的努力经营，已在长安街、国贸有两家商铺。经过八年的努力经营，已在长安街、国贸有两家商铺。</p>
+                            <h3>相关新闻报道</h3>
+                            <ul class="ident_p1_three_u1">
+                                <li><h4>"牛扒工厂"入驻人人投</h4></li>
+                                <li><p>报道媒体:北京生活频道　　　　　　　　　　　　　报道时间:2016年6月1日</p></li>
+                            </ul>
+                            <ul class="ident_p1_three_u2">
+                                <li><h4>"牛扒工厂"入驻人人投</h4></li>
+                                <li><p>报道媒体:北京生活频道　　　　　　　　　　　　　报道时间:2016年6月1日</p></li>
+                            </ul>
+                        </div>
+
+                        </div>
+                    <div class="ident_zj fr">
+                        <div class="ident_zj1">
+                            <h3>总店证件</h3>
+                            <p class="ident_zj1_p">为保证投资人利益不受损害，我们会对总店(或现有店运营公司)的证件进行审核</p>
+                            <ul class="ident_zj1_u1">
+                                <li>审核项目</li>
+                                <li>审核状态</li>
+                            </ul>
+                            <div class="clear"></div>
+                            <ul class="ident_zj1_u2">
+                                <li>法定代表人身份证</li>
+                                <li>营业执照</li>
+                                <li>税务登记证</li>
+                                <li>组织机构代码证</li>
+                                <li>公司照片</li>
+                                <li>卫生许可证</li>
+                                <li>组织机构代码证</li>
+                                <li>营业执照</li>
+                                <li>税务登记证</li>
+                                <li>营业执照</li>
+                            </ul>
+                            <p>经过八年的努力经营，已在长安街、国贸有两家商铺。经过八年的努力经营
+                                经过八年的努力经营，已在长安街、国贸有两家商铺。经过八年的努力经营，已在长安街、国贸有两家商铺。
+                            </p>
+                        </div>
+                        <div class="ident_zj2">
+                            <h3>人人投资帮助系统</h3>
+                            <ul>
+                                <li><p>什么是预约认购</p><span>产品质量，用心服务</span></li>
+                                <li><p>什么是预约认购</p><span>产品质量，用心服务</span></li>
+                                <li><p>什么是预约认购</p><span>产品质量，用心服务</span></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="clear"></div>
+                    </div>
+
+
+                <!--融资分店-->
+                <div class="ident_pz edit_content " >
+                    <div class="ident_plan   active  fl">
+                        <div class="ident_plan1">
+                            <h3>开店计划</h3>
+                            <p>经过八年的努力经营，已在长安街、国贸有两家商铺。经过八年的努力经营，已在长安街、国贸有两家商铺。
+                                经过八年的努力经营，已在长安街、国贸有两家商铺。经过八年的努力经营，已在长安街、国贸有两家商铺。
+                                经过八年的努力经营，已在长安街、国贸有两家商铺。经过八年的努力经营，已在长安街、国贸有两家商铺。
+                                经过八年的努力经营，已在长安街、国贸有两家商铺。经过八年的努力经营，已在长安街、国贸有两家商铺。
+                                经过八年的努力经营，已在长安街、国贸有两家商铺。经过八年的努力经营，已在长安街、国贸有两家商铺。
+                            </p>
+                            <img src="images/editrzbg_03.jpg">
+                            <ul class="ident_plan_u1">
+                                <li class="nebg"><a>开店总金额：￥100,000</a></li>
+                                <li class="noline"><a>最低投资金额:￥100,000</a></li>
+                                <li><p>项目方出资及金额:</p><span>30.00%|￥900，000</span></li>
+                                <li class="noline"><p>投资方出资及金额:</p><span>30.00%|￥900，000</span></li>
+                                <li><a>开店总金额：30%</a></li>
+                                <li class="noline"><a>最低投资金额:50%</a></li>
+                            </ul>
+                            <div class="clear"></div>
+                        </div>
+                        <div class="ident_plan2">
+                            <h3>预约认购投资人</h3>
+                            <div>
+                                <div class="edit_box fl">
+                                    <img  class="fl" src="images/editbg_07.jpg">
+                                    <ul class="fl edit_box_ul">
+                                        <li>xiaoxiao<img src="images/editbg_10.jpg"></li>
+                                        <li>北京飞度传媒公司</li>
+                                        <li>预约认购金额：￥400,000</li>
+                                    </ul>
+                                </div>
+                                <div class="edit_box fl  noml">
+                                    <img  class="fl" src="images/editbg_07.jpg">
+                                    <ul class="fl edit_box_ul">
+                                        <li>xiaoxiao<img src="images/editbg_10.jpg"></li>
+                                        <li>北京飞度传媒公司</li>
+                                        <li>预约认购金额：￥400,000</li>
+                                    </ul>
+                                </div>
+                                <div class="edit_box fl">
+                                    <img  class="fl" src="images/editbg_07.jpg">
+                                    <ul class="fl edit_box_ul">
+                                        <li>xiaoxiao<img src="images/editbg_10.jpg"></li>
+                                        <li>北京飞度传媒公司</li>
+                                        <li>预约认购金额：￥400,000</li>
+                                    </ul>
+                                </div>
+                                <div class="edit_box fl noml">
+                                    <img  class="fl" src="images/editbg_07.jpg">
+                                    <ul class="fl edit_box_ul">
+                                        <li>xiaoxiao<img src="images/editbg_10.jpg"></li>
+                                        <li>北京飞度传媒公司</li>
+                                        <li>预约认购金额：￥400,000</li>
+                                    </ul>
+                                </div>
+                                <div class="edit_box fl">
+                                    <img  class="fl" src="images/editbg_07.jpg">
+                                    <ul class="fl edit_box_ul">
+                                        <li>xiaoxiao<img src="images/editbg_10.jpg"></li>
+                                        <li>北京飞度传媒公司</li>
+                                        <li>预约认购金额：￥400,000</li>
+                                    </ul>
+                                </div>
+                                <div class="edit_box fl noml">
+                                    <img  class="fl" src="images/editbg_07.jpg">
+                                    <ul class="fl edit_box_ul">
+                                        <li>xiaoxiao<img src="images/editbg_10.jpg"></li>
+                                        <li>北京飞度传媒公司</li>
+                                        <li>预约认购金额：￥400,000</li>
+                                    </ul>
+                                </div>
+                                <div class="clear"></div>
+                            </div>
+                        </div>
+                        <div class="edit_plan3">
+                            <img src="images/edit_nebg_06.jpg">
+                            <ul>
+                                <li><p>你们比竞争对手更快的战略是什么</p><span>产品质量，用心服务</span></li>
+                                <li><p>你们比竞争对手更快的战略是什么</p><span>产品质量，用心服务</span></li>
+                                <li><p>你们比竞争对手更快的战略是什么</p><span>产品质量，用心服务</span></li>
+                            </ul>
+                            <a href="#">+添加常见问题</a>
+                        </div>
+                        <div class="edit_plan4">
+                            <h3>附件</h3>
+                            <ul>
+                                <li><img src="images/edit_deletebg_09.jpg"><span>合作协议</span></li>
+                                <li><img src="images/edit_deletebg_09.jpg"><span>合作协议</span></li>
+                                <li><img src="images/edit_deletebg_09.jpg"><span>合作协议</span></li>
+                                <li><a href="#">+上传文件</a></li>
+                            </ul>
+                            <div class="clear"></div>
+                        </div>
+
+                    </div>
+                    <div class="ident_zj fr">
+                        <div class="ident_zj1">
+                            <h3>总店证件</h3>
+                            <p class="ident_zj1_p">为保证投资人利益不受损害，我们会对总店(或现有店运营公司)的证件进行审核</p>
+                            <ul class="ident_zj1_u1">
+                                <li>审核项目</li>
+                                <li>审核状态</li>
+                            </ul>
+                            <div class="clear"></div>
+                            <ul class="ident_zj1_u2">
+                                <li>法定代表人身份证</li>
+                                <li>营业执照</li>
+                                <li>税务登记证</li>
+                                <li>组织机构代码证</li>
+                                <li>公司照片</li>
+                                <li>卫生许可证</li>
+                                <li>组织机构代码证</li>
+                                <li>营业执照</li>
+                                <li>税务登记证</li>
+                                <li>营业执照</li>
+                            </ul>
+                            <p>经过八年的努力经营，已在长安街、国贸有两家商铺。经过八年的努力经营
+                                经过八年的努力经营，已在长安街、国贸有两家商铺。经过八年的努力经营，已在长安街、国贸有两家商铺。
+                            </p>
+                        </div>
+                        <div class="ident_zj2">
+                            <h3>人人投资帮助系统</h3>
+                            <ul>
+                                <li><p>什么是预约认购</p><span>产品质量，用心服务</span></li>
+                                <li><p>什么是预约认购</p><span>产品质量，用心服务</span></li>
+                                <li><p>什么是预约认购</p><span>产品质量，用心服务</span></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="clear"></div>
+                </div>
+                <!--融资动态-->
+                <div class="ident_pz edit_content">
+                    <div class="ident_pr fl">
+                        <ul class="ident_plan_title">
+                            <li><h4>动态</h4></li>
+                            <li><h4 class="ao">项目公告</h4></li>
+                        </ul>
+                        <div class="clear"></div>
+                        <ul class="ident_plan_con">
+                            <li><img src="images/person.png" /><p>裴兰兰预约认购了多格<i>茶饮店铺</i></p><span>2014—03—01</span></li>
+                            <li><img src="images/person.png" /><p>裴兰兰预约认购了多格<i>茶饮店铺</i></p><span>2014—03—01</span></li>
+                            <li><img src="images/person.png" /><p>裴兰兰预约认购了多格<i>茶饮店铺</i></p><span>2014—03—01</span></li>
+                            <li><img src="images/person.png" /><p>裴兰兰预约认购了多格<i>茶饮店铺</i></p><span>2014—03—01</span></li>
+                            <li><img src="images/person.png" /><p>裴兰兰预约认购了多格<i>茶饮店铺</i></p><span>2014—03—01</span></li>
+                            <li><img src="images/person.png" /><p>裴兰兰预约认购了多格<i>茶饮店铺</i></p><span>2014—03—01</span></li>
+                            <li><img src="images/person.png" /><p>裴兰兰预约认购了多格<i>茶饮店铺</i></p><span>2014—03—01</span></li>
+                            <li><img src="images/person.png" /><p>裴兰兰预约认购了多格<i>茶饮店铺</i></p><span>2014—03—01</span></li>
+                            <li><img src="images/person.png" /><p>裴兰兰预约认购了多格<i>茶饮店铺</i></p><span>2014—03—01</span></li>
+                            <li><img src="images/person.png" /><p>裴兰兰预约认购了多格<i>茶饮店铺</i></p><span>2014—03—01</span></li>
+                            <li><img src="images/person.png" /><p>裴兰兰预约认购了多格<i>茶饮店铺</i></p><span>2014—03—01</span></li>
+                            <li><img src="images/person.png" /><p>裴兰兰预约认购了多格<i>茶饮店铺</i></p><span>2014—03—01</span></li>
+                        </ul>
+                    </div>
+                    <div class="ident_zj fr">
+                        <div class="ident_zj1">
+                            <h3>总店证件</h3>
+                            <p class="ident_zj1_p">为保证投资人利益不受损害，我们会对总店(或现有店运营公司)的证件进行审核</p>
+                            <ul class="ident_zj1_u1">
+                                <li>审核项目</li>
+                                <li>审核状态</li>
+                            </ul>
+                            <div class="clear"></div>
+                            <ul class="ident_zj1_u2">
+                                <li>法定代表人身份证</li>
+                                <li>营业执照</li>
+                                <li>税务登记证</li>
+                                <li>组织机构代码证</li>
+                                <li>公司照片</li>
+                                <li>卫生许可证</li>
+                                <li>组织机构代码证</li>
+                                <li>营业执照</li>
+                                <li>税务登记证</li>
+                                <li>营业执照</li>
+                            </ul>
+                            <p>经过八年的努力经营，已在长安街、国贸有两家商铺。经过八年的努力经营
+                                经过八年的努力经营，已在长安街、国贸有两家商铺。经过八年的努力经营，已在长安街、国贸有两家商铺。
+                            </p>
+                        </div>
+                        <div class="ident_zj2">
+                            <h3>人人投资帮助系统</h3>
+                            <ul>
+                                <li><p>什么是预约认购</p><span>产品质量，用心服务</span></li>
+                                <li><p>什么是预约认购</p><span>产品质量，用心服务</span></li>
+                                <li><p>什么是预约认购</p><span>产品质量，用心服务</span></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="clear"></div>
+                </div>
+                <!--粉丝-->
+                <div class="ident_pz edit_content" >
+                    <div class="ident_plan   active  fl">
+                        <div class="ident_plan1">
+                            <h3>开店计划</h3>
+                            <p>经过八年的努力经营，已在长安街、国贸有两家商铺。经过八年的努力经营，已在长安街、国贸有两家商铺。
+                                经过八年的努力经营，已在长安街、国贸有两家商铺。经过八年的努力经营，已在长安街、国贸有两家商铺。
+                                经过八年的努力经营，已在长安街、国贸有两家商铺。经过八年的努力经营，已在长安街、国贸有两家商铺。
+                                经过八年的努力经营，已在长安街、国贸有两家商铺。经过八年的努力经营，已在长安街、国贸有两家商铺。
+                                经过八年的努力经营，已在长安街、国贸有两家商铺。经过八年的努力经营，已在长安街、国贸有两家商铺。
+                            </p>
+                            <img src="images/editrzbg_03.jpg">
+                            <ul class="ident_plan_u1">
+                                <li class="nebg"><a>开店总金额：￥100,000</a></li>
+                                <li class="noline"><a>最低投资金额:￥100,000</a></li>
+                                <li><p>项目方出资及金额:</p><span>30.00%|￥900，000</span></li>
+                                <li class="noline"><p>投资方出资及金额:</p><span>30.00%|￥900，000</span></li>
+                                <li><a>开店总金额：30%</a></li>
+                                <li class="noline"><a>最低投资金额:50%</a></li>
+                            </ul>
+                            <div class="clear"></div>
+                        </div>
+                        <div class="ident_plan2">
+                            <h3>预约认购投资人</h3>
+                            <div>
+                                <div class="edit_box fl">
+                                    <img  class="fl" src="images/editbg_07.jpg">
+                                    <ul class="fl edit_box_ul">
+                                        <li>xiaoxiao<img src="images/editbg_10.jpg"></li>
+                                        <li>北京飞度传媒公司</li>
+                                        <li>预约认购金额：￥400,000</li>
+                                    </ul>
+                                </div>
+                                <div class="edit_box fl  noml">
+                                    <img  class="fl" src="images/editbg_07.jpg">
+                                    <ul class="fl edit_box_ul">
+                                        <li>xiaoxiao<img src="images/editbg_10.jpg"></li>
+                                        <li>北京飞度传媒公司</li>
+                                        <li>预约认购金额：￥400,000</li>
+                                    </ul>
+                                </div>
+                                <div class="edit_box fl">
+                                    <img  class="fl" src="images/editbg_07.jpg">
+                                    <ul class="fl edit_box_ul">
+                                        <li>xiaoxiao<img src="images/editbg_10.jpg"></li>
+                                        <li>北京飞度传媒公司</li>
+                                        <li>预约认购金额：￥400,000</li>
+                                    </ul>
+                                </div>
+                                <div class="edit_box fl noml">
+                                    <img  class="fl" src="images/editbg_07.jpg">
+                                    <ul class="fl edit_box_ul">
+                                        <li>xiaoxiao<img src="images/editbg_10.jpg"></li>
+                                        <li>北京飞度传媒公司</li>
+                                        <li>预约认购金额：￥400,000</li>
+                                    </ul>
+                                </div>
+                                <div class="edit_box fl">
+                                    <img  class="fl" src="images/editbg_07.jpg">
+                                    <ul class="fl edit_box_ul">
+                                        <li>xiaoxiao<img src="images/editbg_10.jpg"></li>
+                                        <li>北京飞度传媒公司</li>
+                                        <li>预约认购金额：￥400,000</li>
+                                    </ul>
+                                </div>
+                                <div class="edit_box fl noml">
+                                    <img  class="fl" src="images/editbg_07.jpg">
+                                    <ul class="fl edit_box_ul">
+                                        <li>xiaoxiao<img src="images/editbg_10.jpg"></li>
+                                        <li>北京飞度传媒公司</li>
+                                        <li>预约认购金额：￥400,000</li>
+                                    </ul>
+                                </div>
+                                <div class="clear"></div>
+                            </div>
+                        </div>
+                        <div class="edit_plan3">
+                            <img src="images/edit_nebg_06.jpg">
+                            <ul>
+                                <li><p>你们比竞争对手更快的战略是什么</p><span>产品质量，用心服务</span></li>
+                                <li><p>你们比竞争对手更快的战略是什么</p><span>产品质量，用心服务</span></li>
+                                <li><p>你们比竞争对手更快的战略是什么</p><span>产品质量，用心服务</span></li>
+                            </ul>
+                            <a href="#">+添加常见问题</a>
+                        </div>
+                        <div class="edit_plan4">
+                            <h3>附件</h3>
+                            <ul>
+                                <li><img src="images/edit_deletebg_09.jpg"><span>合作协议</span></li>
+                                <li><img src="images/edit_deletebg_09.jpg"><span>合作协议</span></li>
+                                <li><img src="images/edit_deletebg_09.jpg"><span>合作协议</span></li>
+                                <li><a href="#">+上传文件</a></li>
+                            </ul>
+                            <div class="clear"></div>
+                        </div>
+
+                    </div>
+                    <div class="ident_zj fr">
+                        <div class="ident_zj1">
+                            <h3>总店证件</h3>
+                            <p class="ident_zj1_p">为保证投资人利益不受损害，我们会对总店(或现有店运营公司)的证件进行审核</p>
+                            <ul class="ident_zj1_u1">
+                                <li>审核项目</li>
+                                <li>审核状态</li>
+                            </ul>
+                            <div class="clear"></div>
+                            <ul class="ident_zj1_u2">
+                                <li>法定代表人身份证</li>
+                                <li>营业执照</li>
+                                <li>税务登记证</li>
+                                <li>组织机构代码证</li>
+                                <li>公司照片</li>
+                                <li>卫生许可证</li>
+                                <li>组织机构代码证</li>
+                                <li>营业执照</li>
+                                <li>税务登记证</li>
+                                <li>营业执照</li>
+                            </ul>
+                            <p>经过八年的努力经营，已在长安街、国贸有两家商铺。经过八年的努力经营
+                                经过八年的努力经营，已在长安街、国贸有两家商铺。经过八年的努力经营，已在长安街、国贸有两家商铺。
+                            </p>
+                        </div>
+                        <div class="ident_zj2">
+                            <h3>人人投资帮助系统</h3>
+                            <ul>
+                                <li><p>什么是预约认购</p><span>产品质量，用心服务</span></li>
+                                <li><p>什么是预约认购</p><span>产品质量，用心服务</span></li>
+                                <li><p>什么是预约认购</p><span>产品质量，用心服务</span></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="clear"></div>
+                </div>
+                <!--已有店铺-->
+                <div class="ident_pz edit_content">
+                    <div class="ident_pr fl">
+                        <ul class="ident_plan_title">
+                            <li><h4>动态</h4></li>
+                            <li><h4 class="ao">项目公告</h4></li>
+                        </ul>
+                        <div class="clear"></div>
+                        <ul class="ident_plan_con">
+                            <li><p>多格万全庄已开业，请大家多多支持。</p><span>2014—03—01</span></li>
+                            <li><p>多格万全庄已开业，请大家多多支持。</p><span>2014—03—01</span></li>
+                            <li><p>多格万全庄已开业，请大家多多支持。</p><span>2014—03—01</span></li>
+                            <li><p>多格万全庄已开业，请大家多多支持。</p><span>2014—03—01</span></li>
+                            <li><p>多格万全庄已开业，请大家多多支持。</p><span>2014—03—01</span></li>
+                            <li><p>多格万全庄已开业，请大家多多支持。</p><span>2014—03—01</span></li>
+                            <li><p>多格万全庄已开业，请大家多多支持。</p><span>2014—03—01</span></li>
+                            <li><p>多格万全庄已开业，请大家多多支持。</p><span>2014—03—01</span></li>
+                            <li><p>多格万全庄已开业，请大家多多支持。</p><span>2014—03—01</span></li>
+                            <li><p>多格万全庄已开业，请大家多多支持。</p><span>2014—03—01</span></li>
+                            <li><p>多格万全庄已开业，请大家多多支持。</p><span>2014—03—01</span></li>
+                            <li><p>多格万全庄已开业，请大家多多支持。</p><span>2014—03—01</span></li>
+                        </ul>
+                    </div>
+                    <div class="ident_zj fr">
+                        <div class="ident_zj1">
+                            <h3>总店证件</h3>
+                            <p class="ident_zj1_p">为保证投资人利益不受损害，我们会对总店(或现有店运营公司)的证件进行审核</p>
+                            <ul class="ident_zj1_u1">
+                                <li>审核项目</li>
+                                <li>审核状态</li>
+                            </ul>
+                            <div class="clear"></div>
+                            <ul class="ident_zj1_u2">
+                                <li>法定代表人身份证</li>
+                                <li>营业执照</li>
+                                <li>税务登记证</li>
+                                <li>组织机构代码证</li>
+                                <li>公司照片</li>
+                                <li>卫生许可证</li>
+                                <li>组织机构代码证</li>
+                                <li>营业执照</li>
+                                <li>税务登记证</li>
+                                <li>营业执照</li>
+                            </ul>
+                            <p>经过八年的努力经营，已在长安街、国贸有两家商铺。经过八年的努力经营
+                                经过八年的努力经营，已在长安街、国贸有两家商铺。经过八年的努力经营，已在长安街、国贸有两家商铺。
+                            </p>
+                        </div>
+                        <div class="ident_zj2">
+                            <h3>人人投资帮助系统</h3>
+                            <ul>
+                                <li><p>什么是预约认购</p><span>产品质量，用心服务</span></li>
+                                <li><p>什么是预约认购</p><span>产品质量，用心服务</span></li>
+                                <li><p>什么是预约认购</p><span>产品质量，用心服务</span></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="clear"></div>
+                </div>
+                <!--网址-->
+                <div class="ident_pz edit_content">
+                    <div class="ident_pl fl">
+                        <div class="ident_pl_one">
+                            <h3>视频</h3>
+                            <img class="edit_plo" src="images/edit_onebg_03.jpg">
+                            <img  class="edit_plt" src="images/edit_onebg_07.jpg">
+                            <p>经过八年的努力经营，已在长安街、国贸有两家商铺。经过八年的努力经营，已在长安街、国贸有两家商铺。
+                                经过八年的努力经营，已在长安街、国贸有两家商铺。经过八年的努力经营，已在长安街、国贸有两家商铺。
+                                经过八年的努力经营，已在长安街、国贸有两家商铺。经过八年的努力经营，已在长安街、国贸有两家商铺。
+                                经过八年的努力经营，已在长安街、国贸有两家商铺。经过八年的努力经营，已在长安街、国贸有两家商铺。
+                                经过八年的努力经营，已在长安街、国贸有两家商铺。经过八年的努力经营，已在长安街、国贸有两家商铺。
+                                经过八年的努力经营，已在长安街、国贸有两家商铺。经过八年的努力经营，已在长安街、国贸有两家商铺。
+                                经过八年的努力经营，已在长安街、国贸有两家商铺。经过八年的努力经营，已在长安街、国贸有两家商铺。
+                                经过八年的努力经营，已在长安街、国贸有两家商铺。经过八年的努力经营，已在长安街、国贸有两家商铺。
+                                经过八年的努力经营，已在长安街、国贸有两家商铺。经过八年的努力经营，已在长安街、国贸有两家商铺。
+                                经过八年的努力经营，已在长安街、国贸有两家商铺。经过八年的努力经营，已在长安街、国贸有两家商铺。
+                                经过八年的努力经营，已在长安街、国贸有两家商铺。经过八年的努力经营，已在长安街、国贸有两家商铺。
+                                经过八年的努力经营，已在长安街、国贸有两家商铺。经过八年的努力经营，已在长安街、国贸有两家商铺。
+                                经过八年的努力经营，已在长安街、国贸有两家商铺。经过八年的努力经营，已在长安街、国贸有两家商铺。
+                                经过八年的努力经营，已在长安街、国贸有两家商铺。经过八年的努力经营，已在长安街、国贸有两家商铺。
+                                经过八年的努力经营，已在长安街、国贸有两家商铺。经过八年的努力经营，已在长安街、国贸有两家商铺。</p>
+                        </div>
+                        <div class="ident_pl_two">
+                            <h3>运营情况</h3>
+                            <ul class="ident_pl_two_u1">
+                                <li>平均单店面积　:　100平~500平</li>
+                                <li>　　人均消费　:　100元~500元</li>
+                                <li>　　　客流量　:　1000人~5000人</li>
+                            </ul>
+                            <div class="clear"></div>
+                            <h3>店铺图片</h3>
+                            <img class="ident_pi_tpic1" src="images/edit_onebg_11.jpg">
+                            <img  class="ident_pi_tpic2" src="images/editfirstpic_11.jpg">
+                            <ul class="ident_pl_two_u2">
+                                <li><img src="images/editfirstpic_15.jpg"></li>
+                                <li><img src="images/editfirstpic_15.jpg"></li>
+                                <li><img src="images/editfirstpic_15.jpg"></li>
+                                <li class="ident_pl_two_u2a"><a href="#">+添加</a></li>
+                            </ul>
+                            <div class="clear"></div>
+                            <p class="ident_pl_two_lastp1">经过八年的努力经营，已在长安街、国贸有两家商铺。经过八年的努力经营
+                                经过八年的努力经营，已在长安街、国贸有两家商铺。经过八年的努力经营，已在长安街、国贸有两家商铺。</p>
+                            <ul class="ident_pl_two_u3">
+                                <li><h4>创始人寄语</h4></li>
+                                <li><p>经过八年的努力经营，已在长安街、国贸有两家商铺。经过八年的努力经营
+                                    经过八年的努力经营，已在长安街、国贸有两家商铺。经过八年的努力经营，已在长安街、国贸有两家商铺。</p></li>
+                            </ul>
+                            <ul class="ident_pl_two_u4">
+                                <li><h4>团队简介</h4></li>
+                                <li><p>经过八年的努力经营，已在长安街、国贸有两家商铺。经过八年的努力经营
+                                    经过八年的努力经营，已在长安街、国贸有两家商铺。经过八年的努力经营，已在长安街、国贸有两家商铺。</p></li>
+                            </ul>
+                        </div>
+                        <div class="ident_pl_three">
+                            <img src="images/edit_onebg_17.jpg">
+                            <p>经过八年的努力经营，已在长安街、国贸有两家商铺。经过八年的努力经营，已在长安街、国贸有两家商铺。
+                                经过八年的努力经营，已在长安街、国贸有两家商铺。经过八年的努力经营，已在长安街、国贸有两家商铺。
+                                经过八年的努力经营，已在长安街、国贸有两家商铺。经过八年的努力经营，已在长安街、国贸有两家商铺。
+                                经过八年的努力经营，已在长安街、国贸有两家商铺。经过八年的努力经营，已在长安街、国贸有两家商铺。</p>
+                            <h3>相关新闻报道</h3>
+                            <ul class="ident_p1_three_u1">
+                                <li><h4>"牛扒工厂"入驻人人投</h4></li>
+                                <li><p>报道媒体:北京生活频道　　　　　　　　　　　　　报道时间:2016年6月1日</p></li>
+                            </ul>
+                            <ul class="ident_p1_three_u2">
+                                <li><h4>"牛扒工厂"入驻人人投</h4></li>
+                                <li><p>报道媒体:北京生活频道　　　　　　　　　　　　　报道时间:2016年6月1日</p></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="ident_zj fr">
+                        <div class="ident_zj1">
+                            <h3>总店证件</h3>
+                            <p class="ident_zj1_p">为保证投资人利益不受损害，我们会对总店(或现有店运营公司)的证件进行审核</p>
+                            <ul class="ident_zj1_u1">
+                                <li>审核项目</li>
+                                <li>审核状态</li>
+                            </ul>
+                            <div class="clear"></div>
+                            <ul class="ident_zj1_u2">
+                                <li>法定代表人身份证</li>
+                                <li>营业执照</li>
+                                <li>税务登记证</li>
+                                <li>组织机构代码证</li>
+                                <li>公司照片</li>
+                                <li>卫生许可证</li>
+                                <li>组织机构代码证</li>
+                                <li>营业执照</li>
+                                <li>税务登记证</li>
+                                <li>营业执照</li>
+                            </ul>
+                            <p>经过八年的努力经营，已在长安街、国贸有两家商铺。经过八年的努力经营
+                                经过八年的努力经营，已在长安街、国贸有两家商铺。经过八年的努力经营，已在长安街、国贸有两家商铺。
+                            </p>
+                        </div>
+                        <div class="ident_zj2">
+                            <h3>人人投资帮助系统</h3>
+                            <ul>
+                                <li><p>什么是预约认购</p><span>产品质量，用心服务</span></li>
+                                <li><p>什么是预约认购</p><span>产品质量，用心服务</span></li>
+                                <li><p>什么是预约认购</p><span>产品质量，用心服务</span></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="clear"></div>
+                </div>
+            </div>
+        </div>
+        </div>
+</body>
+</html>

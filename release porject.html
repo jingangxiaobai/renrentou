@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>release_project</title>
+    <link href="css/base.css" rel="stylesheet">
+    <script src="js/hxsd_tools.js"></script>
+    <script src="js/widget.js"></script>
+    <script>
+        window.onload=function(){
+            hxsd_tab("tab","relase_cont");
+            switch_person();
+        };
+    </script>
+</head>
+<body>
+<div class="top">
+    <div class="inner">
+        <div class="top_logo fl">
+            <img class="fl" src="images/logo.png" />
+            <h1 class="fl"><a href="index.html">人人投</a><span></span></h1>
+            <div class="top_logo_right fl">
+                <h2 class="fl">投资您身边的店铺</h2>
+                <p>www.renrentou.com</p>
+            </div>
+        </div>
+        <ul class="top_nav fl">
+            <li><a href="list.html">融资店铺</a></li>
+            <li><a href="list_person.html">店铺投资人</a></li>
+            <li><a class="top_spc_word" href="new_list.html">新手指引</a></li>
+        </ul>
+        <div class="top_logon fl">
+            <h3 class="fl" id="center_members">
+                <a  class="top_logon_success" href="#">会员中心</a>
+                <ul id="top_members">
+                    <li><a href="myHomPage.html">个人主页</a></li>
+                    <li><a href="#">提交融资店铺</a></li>
+                    <li><a href="activity.html">已提交融资店铺</a></li>
+                    <li><a href="approve.html">投资人认证</a></li>
+                    <li><a href="person_setting.html">账号设置</a></li>
+                    <li><a href="index.html">安全退出</a></li>
+                </ul>
+            </h3>
+            <p class="fl"><a href="login_login.html">消息（199）</a></p>
+        </div>
+    </div>
+</div>
+<div class="hxl">
+    <!--导航栏样式-->
+    <div class="edit_header inner">
+        <img  class="fl" src="images/app_logo.png">
+        <p class="fl">投资认证</p>
+        <div class="clear"></div>
+        <ul class="edit_nav">
+            <li class="li_one">
+                <span class="line_one"></span>
+                <dl class="dl_one">
+                    <dt class="num"><i class="numbg">1</i></dt>
+                    <dd>现有店铺介绍</dd>
+                </dl>
+                <span class="line_two"></span>
+            </li>
+            <li class="li_two">
+                <span class="line_three"></span>
+                <dl>
+                    <dt ><i>2</i></dt>
+                    <dd>草稿状态编辑项目</dd>
+                </dl>
+                <span class="line_four"></span>
+            </li>
+            <li class="li_three">
+                <span class="line_five"></span>
+                <dl>
+                    <dt ><i>3</i></dt>
+                    <dd>支付账号注册并了解融合管理</dd>
+                </dl>
+            </li>
+            <li class="li_three">
+                <span class="line_five"></span>
+                <dl>
+                    <dt ><i>4</i></dt>
+                    <dd>人人投审核</dd>
+                </dl>
+            </li>
+        </ul>
+    </div>
+    <div class="release_main inner">
+        <div class="release_main_top">
+            <ul>
+                <li><p class="fl">信息完整度 : </p></li>
+                <li class="release_main_tpic1 "><img  src="images/release_scroll.png"></li>
+                <li><p class="fl bf">25%</p></li>
+            </ul>
+            <span class="fr">温馨提示:*为必填项和必要认证项，所有资料均会严格保密</span>
+        </div>
+        <div id="tab" class="release_main_bot">
+            <ul class="release_main_bot_l fl">
+                <li class="ac"><a href="#">现有店介绍</a> </li>
+                <li><a href="#">融资分店</a> </li>
+                <li><a href="#">审核资料提交</a> </li>
+            </ul>
+
+            <!--现有店介绍-->
+            <div  class="active relase_cont release_main_bot_r   fr">
+                <form class="release_form_group">
+                    <div class="release_form">
+                        <p class="release_truename"><span class="leftslow">*</span>　项目名称 :</p>
+                        <input type="text" class="release_text">
+                    </div>
+                    <div class="release_form">
+                        <p class="release_truename"><span class="leftslow">*</span>　项目封面图 :</p>
+                        <input type="button" class="release_textpic" value="暂无照片">
+                        <a href="#" class="release_textpic2">选择文件</a>
+                        <!--<a class="relase_textpic3">您可以选择一张照片作为您的项目封面图</a>-->
+                    </div>
+                    <div class="release_form">
+                        <p class="release_truename"><span class="leftslow">*</span>　一句话介绍 :</p>
+                        <input type="text" class="release_text">
+                    </div>
+                    <div class="release_form">
+                        <p class="release_truename"><span class="leftslow">*</span>　行业 :</p>
+                        <select class="relase_select"></select><select class="relase_select"></select>
+                    </div>
+                    <div class="release_form">
+                        <p class="release_truename"><span class="leftslow">*</span>　项目简介 :</p>
+                        <textarea rows="10" cols="60"    class="release_textarea"></textarea>
+                    </div>
+                    <div class="release_form">
+                        <p class="release_truename"><span class="leftslow">*</span>　所在地区 :</p>
+                        <select class="relase_select "><option>湖南</option></select>省<select class="relase_select"><option>益阳</option></select>市<select class="relase_select"><option>某某</option></select>区
+                        <input type="text" class="release_texta " value="街道地址">
+                    </div>
+                    <div class="release_form">
+                        <p class="release_truename"><span class="leftslow">*</span>　目前开店数量 :</p>
+                        <input type="text" class="release_text">
+                    </div>
+                    <div class="release_form">
+                        <p class="release_truename"><span class="leftslow">*</span>　创始人姓名 :</p>
+                        <input type="text" class="release_text">
+                    </div>
+                    <div class="release_form">
+                        <p class="release_truename"><span class="leftslow">*</span>　创始人邮箱 :</p>
+                        <input type="text" class="release_text">
+                    </div>
+                    <div class="release_form">
+                        <p class="release_truename"><span class="leftslow">*</span>　创始人头像 :</p>
+                        <input type="button" class="release_textpic" value="上传">
+                        <a href="#" class="release_textpic2">选择文件</a>
+                        <a class="relase_textpic3">上传创始人头像</a>
+                    </div>
+                    <div class="release_form">
+                        <p class="release_truename"><span class="leftslow">*</span>　创始人简介 :</p>
+                        <textarea rows="10" cols="60"    class="release_textarea"></textarea>
+                    </div>
+                    <div class="release_form">
+                        <p class="release_truename"><span class="leftslow">*</span>　网址 :</p>
+                        <input type="text" class="release_text">
+                    </div>
+                    <div class="release_form">
+                        <p class="release_truename"><span class="leftslow">*</span>　新浪微博 :</p>
+                        <input type="text" class="release_text">
+                    </div>
+                    <div class="release_form">
+                        <input type="checkbox" class="release_checkbox">我已经认真阅读并同意（融资合作协议）
+                    </div>
+                    <div class="release_form">
+                        <a  class="release_btn1" href="editproject.html">下一步</a>
+                    </div>
+                </form>
+            </div>
+            <!--融资分店-->
+            <div class="relase_cont release_main_bot_r fr">
+                <form class="release_form_group">
+                    <div class="release_form">
+                        <p class="release_truename"><span class="leftslow">*</span>　开店计划 :</p>
+                        <textarea rows="10" cols="60"    class="release_textarea"></textarea>
+                    </div>
+                    <div class="release_form">
+                        <p class="release_truename"><span class="leftslow">*</span>　融资金额 ￥</p>
+                        <input type="text" class="release_text">　％
+                    </div>
+                    <div class="release_form">
+                        <p class="release_truename"><span class="leftslow">*</span>　单投资人最低出资 ￥</p>
+                        <input type="text" class="release_text">　需要>目标金额的2％
+                    </div>
+                    <div class="release_form">
+                        <p class="release_truename"><span class="leftslow">*</span>　项目方出资及比例 ￥</p>
+                        <input type="text" class="release_text">
+                        <input type="text" class="release_bf">　％
+                    </div>
+                    <div class="release_form">
+                        <p class="release_truename"><span class="leftslow">*</span>　项目方收益比例 ￥</p>
+                        <input type="text" class="release_text">　需要>目标金额的５％
+                    </div>
+                    <div class="release_form">
+                        <p class="release_truename"><span class="leftslow">*</span>　投资人出资及比例 ￥</p>
+                        <input type="text" class="release_text">
+                        <input type="text" class="release_bf">
+                    </div>
+                    <div class="release_form">
+                        <p class="release_truename"><span class="leftslow">*</span>　投资方收益比例 ￥</p>
+                        <input type="text" class="release_text">
+                    </div>
+                    <div class="release_form">
+                        <a  class="release_btn1" href="identity.html">上一步</a>
+                        <a  class="release_btn" href="editproject.html">下一步</a>
+                    </div>
+                </form>
+            </div>
+            <!--审核资料提交-->
+            <div  class="relase_cont release_main_bot_r   fr">
+                <div class="relase_one_top relase_dis_left">
+                    <p>身份证认证</p>
+                </div>
+                <form class="release_form_group">
+                    <div class="release_form">
+                        <p class="release_truename"><span class="leftslow">*</span>　真实姓名 :</p>
+                        <input type="text" class="release_text">
+                    </div>
+                    <div class="release_form">
+                        <p class="release_truename"><span class="leftslow">*</span>　身份证号码 :</p>
+                        <input type="text" class="release_text">
+                    </div>
+                    <div class="release_form">
+                        <p class="release_truename"><span class="leftslow">*</span>　上传身份证正面照片 :</p>
+                        <input type="button" class="release_textpic" value="暂无照片">
+                        <a href="#" class="release_textpic2">选择文件</a>
+
+                    </div>
+                    <div class="release_form">
+                        <p class="release_truename"><span class="leftslow">*</span>　上传身份证反面照片 :</p>
+                        <input type="button" class="release_textpic" value="暂无照片">
+                        <a href="#" class="release_textpic2">选择文件</a>
+                    </div>
+                </form>
+                <div class="clear"></div>
+                <div class="relase_one_top relase_dis_left">
+                    <p>手机认证</p>
+                </div>
+                <form class="release_form_group">
+                    <div class="release_form">
+                        <p class="release_truename"><span class="leftslow">*</span>　手机号码 :</p>
+                        <input type="text" class="release_text">
+                        <input type="button" value="发送短信验证码" class="relase_ph_btn">
+                        <p class="release_ph">请输入您经常使用的手机号码</p>
+                        <input type="text" class="release_text_submit">
+                        <input type="submit" value="提交" class="relase_ph_btn">
+                    </div>
+                </form>
+                <div class="relase_one_top relase_dis_left">
+                    <p>身份证认证</p>
+                </div>
+                <div class="relase_t_btm">
+                    <p class="relase_tfon"><span>这里需要您上传您的总店或现有店铺的运营公司的部分证件，该证件人人投只做风控审核使用。这里不必填，
+                但是更多的证件通过审核，会大大增加投资人对您的项目的信任。</span></p>
+                    <ul>
+                        <li><p class="fl relase_fon">法定代表人身份</p><a href="#">选择文件</a></li>
+                        <li><p class="fl">组织机构代码证</p><a href="#">选择文件</a></li>
+                        <li><p class="fl">组织机构代码证</p><a href="#">选择文件</a></li>
+                        <li><p class="fl">组织机构代码证</p><a href="#">选择文件</a></li>
+                        <li><p class="fl">组织机构代码证</p><a href="#">选择文件</a></li>
+                        <li><p class="relase_select_last"><p class="fl">组织机构代码证</p><a href="#">选择文件</a></li>
+                    </ul>
+
+                </div>
+                <div class="clear"></div>
+                <div class="release_form">
+                    <a  class="release_btn1" href="identity.html">上一步</a>
+                    <a  class="release_btn" href="editproject.html">下一步</a>
+                </div>
+            </div>
+
+            <div class="clear"></div>
+        </div>
+    </div>
+</div>
+
+<div class="foot">
+    <div class="inner">
+        <div class="foot_top">
+            <div class="foot_top_left fl">
+                <ul>
+                    <li><a href="#">网站首页</a></li>
+                    <li><a href="#">|</a></li>
+                    <li><a href="#">关于我们</a></li>
+                    <li><a href="#">|</a></li>
+                    <li><a href="#">联系我们</a></li>
+                    <li><a href="#">|</a></li>
+                    <li><a href="#">帮助中心</a></li>
+                    <li><a href="#">|</a></li>
+                    <li><a href="#">新手指引</a></li>
+                    <li><a href="#">|</a></li>
+                    <li><a href="#">媒体报道</a></li>
+                </ul>
+                <P>北京飞度网络科技有限公司 www.renrentou.com 版权所有 京ICP备12015672号-7</P>
+            </div>
+            <div class="foot_top_right fr">
+                <p>关注人人投</p>
+                <span></span>
+            </div>
+        </div>
+        <div class="foot_bottom">
+            <p class="fl"><span>ICP</span>荣获ICP经营许可</p>
+            <img src="images/foot2.jpg"/><img src="images/foot3.jpg"/><img src="images/foot4.png"/><img src="images/foot5.png"/>
+        </div>
+    </div>
+</div>
+</body>
+</html>

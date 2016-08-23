@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>payment_project</title>
+    <link href="css/base.css" rel="stylesheet">
+    <script src="js/hxsd_tools.js"></script>
+    <script src="js/widget.js"></script>
+    <script>
+        window.onload=function(){
+            switch_person();
+            var oDiv=document.getElementById('box');//弹框
+            var open_popBox_btn=document.getElementById('open_popBox_btn');//登录按钮
+            var modal=document.getElementById('black_modal');//模态层
+            var closeBtn=document.getElementById('closeBtn');//关闭弹框按钮
+            var title=oDiv.getElementsByTagName('h4')[0];//弹框标题栏
+
+            //点击登录按钮 模态层 弹框 弹出来
+            open_popBox_btn.onclick=function(){
+                modal.style.display="block";
+                popShow(oDiv);
+            };
+
+            //可以移动弹框
+            drag(oDiv,title);
+
+            //点击关闭按钮，关闭弹框  模态层
+            closeBtn.onclick=function(){
+                oDiv.style.display=modal.style.display="none";
+            }
+        };
+    </script>
+</head>
+<body>
+<div class="top">
+    <div class="inner">
+        <div class="top_logo fl">
+            <img class="fl" src="images/logo.png" />
+            <h1 class="fl"><a href="index.html">人人投</a><span></span></h1>
+            <div class="top_logo_right fl">
+                <h2 class="fl">投资您身边的店铺</h2>
+                <p>www.renrentou.com</p>
+            </div>
+        </div>
+        <ul class="top_nav fl">
+            <li><a href="list.html">融资店铺</a></li>
+            <li><a href="list_person.html">店铺投资人</a></li>
+            <li><a class="top_spc_word" href="new_list.html">新手指引</a></li>
+        </ul>
+        <div class="top_logon fl">
+            <h3 class="fl" id="center_members">
+                <a  class="top_logon_success" href="#">会员中心</a>
+                <ul id="top_members">
+                    <li><a href="myHomPage.html">个人主页</a></li>
+                    <li><a href="#">提交融资店铺</a></li>
+                    <li><a href="activity.html">已提交融资店铺</a></li>
+                    <li><a href="approve.html">投资人认证</a></li>
+                    <li><a href="person_setting.html">账号设置</a></li>
+                    <li><a href="index.html">安全退出</a></li>
+                </ul>
+            </h3>
+            <p class="fl"><a href="login_login.html">消息（199）</a></p>
+        </div>
+    </div>
+</div>
+<div class="hxl">
+    <!--导航栏样式-->
+    <div class="edit_header inner">
+        <img  class="fl" src="images/app_logo.png">
+        <p class="fl">发布项目</p>
+        <div class="clear"></div>
+        <ul class="edit_nav">
+            <li class="li_one">
+                <span class="line_one"></span>
+                <dl class="dl_one">
+                    <dt class="num"><i class="numbg">1</i></dt>
+                    <dd>现有店铺介绍</dd>
+                </dl>
+                <span class="line_two"></span>
+            </li>
+            <li class="li_two">
+                <span class="line_three"></span>
+                <dl>
+                    <dt ><i>2</i></dt>
+                    <dd>草稿状态编辑项目</dd>
+                </dl>
+                <span class="line_four"></span>
+            </li>
+            <li class="li_three">
+                <span class="line_five"></span>
+                <dl>
+                    <dt ><i>3</i></dt>
+                    <dd>支付账号注册并了解融合管理</dd>
+                </dl>
+            </li>
+            <li class="li_three">
+                <span class="line_five"></span>
+                <dl>
+                    <dt ><i>4</i></dt>
+                    <dd>人人投审核</dd>
+                </dl>
+            </li>
+        </ul>
+    </div>
+    <div class="clear"></div>
+    <!--主要内容-->
+    <div class="edit_main inner">
+        <div class="release_main_top">
+            <ul>
+                <li><p class="fl">信息完整度 : </p></li>
+                <li class="release_main_tpic1 "><img  src="images/release_scroll.png"></li>
+                <li><p class="fl bf">25%</p></li>
+            </ul>
+            <span class="fr">温馨提示:*为必填项和必要认证项，所有资料均会严格保密</span>
+        </div>
+        <!--支付宝账号注册-->
+        <div class="pay_page1">
+            <h3>支付宝账号注册</h3>
+            <p class="pay_page1_p1">人人投为了保障投资安全人人投为了保障投资安全人人投为了保障投资安全人人投为了保障投资安全人人投为了保障投资安全</p>
+            <div class="pay_page1_m">
+                <img class="fl" src="images/pay_ybbg_03.jpg">
+                <div class="fl">
+                    <a    href="#">前往易宝支付注册</a>
+                    <input type="checkbox" checked>暂不注册(可以在融资过程中注册)
+                </div>
+
+            </div>
+            <div class="clear"></div>
+            <ul>
+                <li><h4>为什么要注册第三方支付平台账号</h4></li>
+                <li><p>1、线上付款至第三方支付平台后，融资款在所有投资人同意后才可提出，增加资金安全</p></li>
+                <li><p>2、避免线下交易，因操作不当，造成不必要的经济损失。</p></li>
+                <li><p>3、众筹方式可能投资人会多个，线上付款简化操作流程。</p></li>
+            </ul>
+        </div>
+        <!--了解融后管理-->
+        <div class="pay_page2">
+            <h3>了解融后管理</h3>
+            <p class="pay_page2_p1">融资后，我们建议融资方和融资店铺的投资人一起成立有限公司企业来管理融资后的企业。
+                融资后，我们建议融资方和融资店铺的投资人一起成立有限公司企业来管理融资后的企业。
+                融资后，我们建议融资方和融资店铺的投资人一起成立有限公司企业来管理融资后的企业。</p>
+            <p class="pay_page2_p2">将来的融后管理中，需要有《合伙协议》来约束有限公司中您与投资人的权利和义务。
+                在此您可以下载模板，详细阅读，认真填写，填写后可以后期上传至人人投。</p>
+            <a class="copy_xy" href="#">下载《合伙协议》</a>
+            <ul>
+                <li class="pay_page2_p3"><a href="#">点击阅读资料了解融后管理</a></li>
+                <li><a href="#">点击联系在线客服直接了解融后管理</a></li>
+            </ul>
+            <div class="clear"></div>
+        </div>
+        <div  class="pay_page3">
+            <a class="pay_page3_a1" href="editproject.html">上一步</a>
+            <button id="open_popBox_btn"  class="pay_page3_a2">提交审核</button>
+        </div>
+        <div class="clear"></div>
+        <!--模态层 蒙版 遮罩-->
+        <div id="black_modal" class="modal"></div>
+        <!--弹框-->
+        <div id="box" class="popBox">
+            <h4>风险告知</h4>
+            <a class="closewindow"      id="closeBtn" href="javascript:;">×</a>
+            <ul class="pay_popBox_ul">
+                <li>1、投资有风险</li>
+                <li>2、投资要具备风险投资意识，抗风险能力，并且有稳定收入</li>
+                <li>3、投资者需要了解，投资要具备风险投资意识，抗风险能力，并且有稳定收入</li>
+                <li>4、投资者需要了解，投资要具备风险投资意识，抗风险能力，并且有稳定收入</li>
+            </ul>
+            <input class="popBox_input" type="checkbox" checked>我认可此告知，并且可以为投资失败独立负责。
+            <a class="popBox_btn" href="edit_preheat.html">下一步</a>
+        </div>
+
+    </div>
+</div>
+<div class="foot">
+    <div class="inner">
+        <div class="foot_top">
+            <div class="foot_top_left fl">
+                <ul>
+                    <li><a href="#">网站首页</a></li>
+                    <li><a href="#">|</a></li>
+                    <li><a href="#">关于我们</a></li>
+                    <li><a href="#">|</a></li>
+                    <li><a href="#">联系我们</a></li>
+                    <li><a href="#">|</a></li>
+                    <li><a href="#">帮助中心</a></li>
+                    <li><a href="#">|</a></li>
+                    <li><a href="#">新手指引</a></li>
+                    <li><a href="#">|</a></li>
+                    <li><a href="#">媒体报道</a></li>
+                </ul>
+                <P>北京飞度网络科技有限公司 www.renrentou.com 版权所有 京ICP备12015672号-7</P>
+            </div>
+            <div class="foot_top_right fr">
+                <p>关注人人投</p>
+                <span></span>
+            </div>
+        </div>
+        <div class="foot_bottom">
+            <p class="fl"><span>ICP</span>荣获ICP经营许可</p>
+            <img src="images/foot2.jpg"/><img src="images/foot3.jpg"/><img src="images/foot4.png"/><img src="images/foot5.png"/>
+        </div>
+    </div>
+</div>
+</body>
+</html>

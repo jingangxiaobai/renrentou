@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="css/base.css">
+    <script src="js/js.js"></script>
+    <script>
+        //---------------------------------messages页面的js---------------------------------------
+        window.onload=function(){
+            var mess_li=getId2("mess").getElementsByTagName("li");
+            var cont_page=getId2("mess_content").getElementsByClassName("page");
+
+
+
+            for(var i=0;i<mess_li.length;i++){
+                mess_li[i].index=i;
+                mess_li[i].onclick=function(){
+                    //导航区域的变色
+
+                    for(var j=0;j<mess_li.length;j++){
+                        mess_li[j].className="";
+                        cont_page[j].className="page";
+                    }
+                    this.className="on";
+                    //内容区域的替换
+                    cont_page[this.index].className="page active";
+                }
+            };
+
+//--------------------------------6个选项卡------------------------------------------------
+
+
+        };
+        function getId2(id){
+            return typeof id==="string"?document.getElementById(id):id;
+        }
+    </script>
+</head>
+<body>
+<div class="jhm_login">
+    <!--头部部分开始-->
+    <div class="top">
+        <div class="inner">
+            <div class="top_logo fl">
+                <img class="fl" src="images/logo.png" />
+                <h1 class="fl"><a href="index.html">人人投</a><span></span></h1>
+                <div class="top_logo_right fl">
+                    <h2 class="fl">投资您身边的店铺</h2>
+                    <p>www.renrentou.com</p>
+                </div>
+            </div>
+            <ul class="top_nav fl">
+                <li><a href="list.html">融资店铺</a></li>
+                <li><a href="list_person.html">店铺投资人</a></li>
+                <li><a class="top_spc_word" href="new_list.html">新手指引</a></li>
+            </ul>
+            <div class="top_logon fl">
+                <p class="top_logo_w fl"><a href="#">登录</a></p>
+                <p class="fl"><a href="#">注册</a></p>
+            </div>
+        </div>
+    </div>
+    <!--main开始-->
+    <div class="main">
+        <div class="inner" style="background: none;">
+            <div class="addBorder"><img src="images/shutiao.jpg"><span>消息管理</span></div>
+                <div class="about_wrap" style="border:none;">
+                <ul id="mess" class="padd navAbout " style="width:210px;border:1px solid #ccc;margin-right: 20px;background-color:#fff;">
+                    <li class="bord back01 on" style="border:none;">系统通知</li>
+                    <li class="bord back02" style="border:none;">私信</li>
+                    <li class="bord back03" style="border:none;">资金管理</li>
+                </ul>
+                <div id="mess_content" class="contentAbout" style="width:703px;border:1px solid #ccc;border-top:3px solid #000;">
+                    <!----------------------------系统管理----------------------------------->
+                    <div class="page active">
+                        <div id="tab">
+                            <ul class="tab_list">
+                                <li><a  class="ac" href="messages.html">全部</a></li>
+                                <li><a href="messages_2.html">关注</a></li>
+                                <li><a href="messages_3.html">项目提交（5）</a></li>
+                                <li><a href="messages_4.html">约谈</a></li>
+                                <li><a href="messages_5.html">议事厅</a></li>
+                                <li><a href="messages_6.html">其他通知（5）</a></li>
+                            </ul>
+                            <div class="tab_cont">
+                                <div class="tab_item ac">
+                                    <div class="media_list" style="width:666px;padding:28px 0 36px 97px;">
+                                        <img style="margin-top:-15px;" src="images/jhm_person02.jpg">
+                                        <span style="color:#f39c11;">lanlan</span>
+                                        <span style="padding-left:20px;color:#888888;background:url('images/jhm_huizhang.png') no-repeat;">关注了您</span><br>
+                                        <span style="display:block;padding:10px 0;color:#888888;">2014/03/31</span>
+                                    </div>
+                                    <div class="media_list" style="width:666px;padding:28px 0 36px 97px;">
+                                        <img style="margin-top:-15px;" src="images/jhm_person02.jpg">
+                                        <span style="color:#f39c11;">lanlan</span>
+                                        <span style="padding-left:20px;color:#888888;background:url('images/jhm_huizhang.png') no-repeat;">关注了您</span><br>
+                                        <span style="display:block;padding:10px 0;color:#888888;">2014/03/31</span>
+                                    </div>
+                                    <div class="media_list" style="width:666px;padding:28px 0 36px 97px;">
+                                        <img style="margin-top:-15px;" src="images/jhm_person02.jpg">
+                                        <span style="color:#f39c11;">lanlan</span>
+                                        <span style="padding-left:20px;color:#888888;background:url('images/jhm_huizhang.png') no-repeat;">关注了您</span><br>
+                                        <span style="display:block;padding:10px 0;color:#888888;">2014/03/31</span>
+                                    </div>
+                                    <div class="media_list" style="width:666px;padding:28px 0 36px 97px;">
+                                        <img style="margin-top:-15px;" src="images/jhm_person02.jpg">
+                                        <span style="color:#f39c11;">lanlan</span>
+                                        <span style="padding-left:20px;color:#888888;background:url('images/jhm_huizhang.png') no-repeat;">关注了您</span><br>
+                                        <span style="display:block;padding:10px 0;color:#888888;">2014/03/31</span>
+                                    </div>
+                                    <div class="media_list" style="width:666px;padding:28px 0 36px 97px;">
+                                        <img style="margin-top:-15px;" src="images/jhm_person02.jpg">
+                                        <span style="color:#f39c11;">lanlan</span>
+                                        <span style="padding-left:20px;color:#888888;background:url('images/jhm_huizhang.png') no-repeat;">关注了您</span><br>
+                                        <span style="display:block;padding:10px 0;color:#888888;">2014/03/31</span>
+                                    </div<div class="media_list" style="width:666px;padding:28px 0 36px 97px;">
+                                    <img style="margin-top:-15px;" src="images/jhm_person02.jpg">
+                                    <span style="color:#f39c11;">lanlan</span>
+                                    <span style="padding-left:20px;color:#888888;background:url('images/jhm_huizhang.png') no-repeat;">关注了您</span><br>
+                                    <span style="display:block;padding:10px 0;color:#888888;">2014/03/31</span>
+                                </div>
+
+                                </div>
+                                <div class="tab_item">222222</div>
+                                <div class="tab_item">3333333</div>
+                                <div class="tab_item">444444</div>
+                                <div class="tab_item">555555</div>
+                                <div class="tab_item">666666</div>
+                            </div>
+                        </div>
+                    </div>
+                    <!----------------------------私信----------------------------------->
+                    <div class="page">
+                        <div class="media_list">
+                            <img style="margin-top:-15px;" src="images/jhm_person02.jpg">
+                            <span style="color:#f39c11;">xiaoxiao</span>
+                            <span style="padding-left:20px;color:#888888;background:url('images/jhm_huizhang.png') no-repeat;">对您说</span><br>
+                            <p>感谢你关注我。如果对我的项目感兴趣，可以随时联系我，谢谢！感谢你关注我。如果对我的项目
+                                感兴趣，可以随时联系我，谢谢！</p>
+                            <span style="color:#888888;">2014/03/31</span>
+                            <span style="color:#3f8fc1;margin-left:415px;">查看（12） | 回复</span>
+                        </div>
+                        <div class="media_list">
+                            <img style="margin-top:-15px;" src="images/jhm_person02.jpg">
+                            <span style="color:#f39c11;">xiaoxiao</span>
+                            <span style="padding-left:20px;color:#888888;background:url('images/jhm_huizhang.png') no-repeat;">对您说</span><br>
+                            <p>感谢你关注我。如果对我的项目感兴趣，可以随时联系我，谢谢！感谢你关注我。如果对我的项目
+                                感兴趣，可以随时联系我，谢谢！</p>
+                            <span style="color:#888888;">2014/03/31</span>
+                            <span style="color:#3f8fc1;margin-left:415px;">查看（12） | 回复</span>
+                        </div>
+                        <div class="media_list">
+                            <img style="margin-top:-15px;" src="images/jhm_person02.jpg">
+                            <span style="color:#f39c11;">xiaoxiao</span>
+                            <span style="padding-left:20px;color:#888888;background:url('images/jhm_huizhang.png') no-repeat;">对您说</span><br>
+                            <p>感谢你关注我。如果对我的项目感兴趣，可以随时联系我，谢谢！感谢你关注我。如果对我的项目
+                                感兴趣，可以随时联系我，谢谢！</p>
+                            <span style="color:#888888;">2014/03/31</span>
+                            <span style="color:#3f8fc1;margin-left:415px;">查看（12） | 回复</span>
+                        </div>
+                        <div class="media_list">
+                            <img style="margin-top:-15px;" src="images/jhm_person02.jpg">
+                            <span style="color:#f39c11;">xiaoxiao</span>
+                            <span style="padding-left:20px;color:#888888;background:url('images/jhm_huizhang.png') no-repeat;">对您说</span><br>
+                            <p>感谢你关注我。如果对我的项目感兴趣，可以随时联系我，谢谢！感谢你关注我。如果对我的项目
+                                感兴趣，可以随时联系我，谢谢！</p>
+                            <span style="color:#888888;">2014/03/31</span>
+                            <span style="color:#3f8fc1;margin-left:415px;">查看（12） | 回复</span>
+                        </div>
+                        <div class="media_list">
+                            <img style="margin-top:-15px;" src="images/jhm_person02.jpg">
+                            <span style="color:#f39c11;">xiaoxiao</span>
+                            <span style="padding-left:20px;color:#888888;background:url('images/jhm_huizhang.png') no-repeat;">对您说</span><br>
+                            <p>感谢你关注我。如果对我的项目感兴趣，可以随时联系我，谢谢！感谢你关注我。如果对我的项目
+                                感兴趣，可以随时联系我，谢谢！</p>
+                            <span style="color:#888888;">2014/03/31</span>
+                            <span style="color:#3f8fc1;margin-left:415px;">查看（12） | 回复</span>
+                        </div>
+                        <div class="media_list">
+                            <img style="margin-top:-15px;" src="images/jhm_person02.jpg">
+                            <span style="color:#f39c11;">xiaoxiao</span>
+                            <span style="padding-left:20px;color:#888888;background:url('images/jhm_huizhang.png') no-repeat;">对您说</span><br>
+                            <p>感谢你关注我。如果对我的项目感兴趣，可以随时联系我，谢谢！感谢你关注我。如果对我的项目
+                                感兴趣，可以随时联系我，谢谢！</p>
+                            <span style="color:#888888;">2014/03/31</span>
+                            <span style="color:#3f8fc1;margin-left:415px;">查看（12） | 回复</span>
+                        </div>
+                        <div class="media_list">
+                            <img style="margin-top:-15px;" src="images/jhm_person02.jpg">
+                            <span style="color:#f39c11;">xiaoxiao</span>
+                            <span style="padding-left:20px;color:#888888;background:url('images/jhm_huizhang.png') no-repeat;">对您说</span><br>
+                            <p>感谢你关注我。如果对我的项目感兴趣，可以随时联系我，谢谢！感谢你关注我。如果对我的项目
+                                感兴趣，可以随时联系我，谢谢！</p>
+                            <span style="color:#888888;">2014/03/31</span>
+                            <span style="color:#3f8fc1;margin-left:415px;">查看（12） | 回复</span>
+                        </div>
+                    </div>
+                    <!----------------------------资金管理----------------------------------->
+                    <div class="page">
+                        <div class="media_list" style="height:80px;">
+                            <img style="margin-top:-15px;" src="images/jhm_person02.jpg">
+                            <span style="color:#f39c11;">lanlan</span>
+                            <span style="padding-left:20px;color:#888888;background:url('images/jhm_huizhang.png') no-repeat;">向您提交了多格茶饮项目</span>
+                            <span style="color:#3f8fc1;margin-left:35px;">点击查看</span><br>
+                            <span style="color:#888888;margin-top: 20px;">2014/03/31</span>
+                        </div>
+                        <div class="media_list" style="height:80px;">
+                            <img style="margin-top:-15px;" src="images/jhm_person02.jpg">
+                            <span style="color:#f39c11;">lanlan</span>
+                            <span style="padding-left:20px;color:#888888;background:url('images/jhm_huizhang.png') no-repeat;">向您提交了多格茶饮项目</span>
+                            <span style="color:#3f8fc1;margin-left:35px;">点击查看</span><br>
+                            <span style="color:#888888;margin-top: 20px;">2014/03/31</span>
+                        </div>
+                        <div class="media_list" style="height:80px;">
+                            <img style="margin-top:-15px;" src="images/jhm_person02.jpg">
+                            <span style="color:#f39c11;">lanlan</span>
+                            <span style="padding-left:20px;color:#888888;background:url('images/jhm_huizhang.png') no-repeat;">向您提交了多格茶饮项目</span>
+                            <span style="color:#3f8fc1;margin-left:35px;">点击查看</span><br>
+                            <span style="color:#888888;margin-top: 20px;">2014/03/31</span>
+                        </div>
+                        <div class="media_list" style="height:80px;">
+                            <img style="margin-top:-15px;" src="images/jhm_person02.jpg">
+                            <span style="color:#f39c11;">lanlan</span>
+                            <span style="padding-left:20px;color:#888888;background:url('images/jhm_huizhang.png') no-repeat;">向您提交了多格茶饮项目</span>
+                            <span style="color:#3f8fc1;margin-left:35px;">点击查看</span><br>
+                            <span style="color:#888888;margin-top: 20px;">2014/03/31</span>
+                        </div>
+                        <div class="media_list" style="height:80px;">
+                            <img style="margin-top:-15px;" src="images/jhm_person02.jpg">
+                            <span style="color:#f39c11;">lanlan</span>
+                            <span style="padding-left:20px;color:#888888;background:url('images/jhm_huizhang.png') no-repeat;">向您提交了多格茶饮项目</span>
+                            <span style="color:#3f8fc1;margin-left:35px;">点击查看</span><br>
+                            <span style="color:#888888;margin-top: 20px;">2014/03/31</span>
+                        </div>
+                        <div class="media_list" style="height:80px;">
+                            <img style="margin-top:-15px;" src="images/jhm_person02.jpg">
+                            <span style="color:#f39c11;">lanlan</span>
+                            <span style="padding-left:20px;color:#888888;background:url('images/jhm_huizhang.png') no-repeat;">向您提交了多格茶饮项目</span>
+                            <span style="color:#3f8fc1;margin-left:35px;">点击查看</span><br>
+                            <span style="color:#888888;margin-top: 20px;">2014/03/31</span>
+                        </div>
+                        <div class="media_list" style="height:80px;">
+                            <img style="margin-top:-15px;" src="images/jhm_person02.jpg">
+                            <span style="color:#f39c11;">lanlan</span>
+                            <span style="padding-left:20px;color:#888888;background:url('images/jhm_huizhang.png') no-repeat;">向您提交了多格茶饮项目</span>
+                            <span style="color:#3f8fc1;margin-left:35px;">点击查看</span><br>
+                            <span style="color:#888888;margin-top: 20px;">2014/03/31</span>
+                        </div>
+                        <div class="media_list" style="height:80px;">
+                            <img style="margin-top:-15px;" src="images/jhm_person02.jpg">
+                            <span style="color:#f39c11;">lanlan</span>
+                            <span style="padding-left:20px;color:#888888;background:url('images/jhm_huizhang.png') no-repeat;">向您提交了多格茶饮项目</span>
+                            <span style="color:#3f8fc1;margin-left:35px;">点击查看</span><br>
+                            <span style="color:#888888;margin-top: 20px;">2014/03/31</span>
+                        </div>
+                        <div class="media_list" style="height:80px;">
+                            <img style="margin-top:-15px;" src="images/jhm_person02.jpg">
+                            <span style="color:#f39c11;">lanlan</span>
+                            <span style="padding-left:20px;color:#888888;background:url('images/jhm_huizhang.png') no-repeat;">向您提交了多格茶饮项目</span>
+                            <span style="color:#3f8fc1;margin-left:35px;">点击查看</span><br>
+                            <span style="color:#888888;margin-top: 20px;">2014/03/31</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--main结束-->
+    <div class="foot">
+        <div class="inner">
+            <div class="foot_top">
+                <div class="foot_top_left fl">
+                    <ul>
+                        <li><a href="#">网站首页</a></li>
+                        <li><a href="#">|</a></li>
+                        <li><a href="#">关于我们</a></li>
+                        <li><a href="#">|</a></li>
+                        <li><a href="#">联系我们</a></li>
+                        <li><a href="#">|</a></li>
+                        <li><a href="#">帮助中心</a></li>
+                        <li><a href="#">|</a></li>
+                        <li><a href="#">新手指引</a></li>
+                        <li><a href="#">|</a></li>
+                        <li><a href="#">媒体报道</a></li>
+                    </ul>
+                    <P>北京飞度网络科技有限公司 www.renrentou.com 版权所有 京ICP备12015672号-7</P>
+                </div>
+                <div class="foot_top_right fr">
+                    <p>关注人人投</p>
+                    <span></span>
+                </div>
+            </div>
+            <div class="foot_bottom">
+                <p class="fl"><span>ICP</span>荣获ICP经营许可</p>
+                <img src="images/foot2.jpg"/><img src="images/foot3.jpg"/><img src="images/foot4.png"/><img src="images/foot5.png"/>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>
